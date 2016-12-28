@@ -33,7 +33,8 @@ module ThemesForRails
     end
 
     def theme_image_path(asset, new_theme_name = self.theme_name)
-      base_theme_image_path(:theme => new_theme_name, :asset => asset)
+      #base_theme_image_path(:theme => new_theme_name, :asset => asset)
+      "/themes/#{new_theme_name}/images/#{asset}"
     end
     
     def theme_image_tag(source, options = {})
